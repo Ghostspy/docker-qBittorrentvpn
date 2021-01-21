@@ -19,7 +19,7 @@ RUN apt-get update \
     && add-apt-repository ppa:qbittorrent-team/qbittorrent-stable \
     && apt-get update \
     && apt-get install -y qbittorrent-nox openvpn curl moreutils net-tools dos2unix kmod iptables ipcalc unrar python3-pip python3-dev python3-setuptools \
-    && pip3 install re tempfile io gzip
+    && pip3 install re tempfile io gzip helpers \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Add configuration and scripts
